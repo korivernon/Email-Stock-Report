@@ -4,7 +4,7 @@ Currently, this is configured to send you an email of the highest OBV movers and
 
 # Made this to find potential stocks to invest in *Using OBV Analysis*
 
-If you want to get this running on your computer, first input your email at the bottom of the file. If you are using Gmail, you may have to enable[this](https://myaccount.google.com/lesssecureapps?pli=1).
+If you want to get this running on your computer, first input your email at the bottom of the file. If you are using Gmail, you may have to enable [this](https://myaccount.google.com/lesssecureapps?pli=1).
 
 In your terminal, copy and paste this:
 
