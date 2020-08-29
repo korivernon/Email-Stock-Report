@@ -2,7 +2,22 @@
 
 Currently, this is configured to send you an email of the highest OBV movers and the lowest OBV movers. 
 
-# Made this to find potential stocks to invest in
+# Made this to find potential stocks to invest in *Using OBV Analysis*
+
+If you want to get this running on your computer, first input your email at the bottom of the file. If you are using Gmail, you may have to enable [this](https://myaccount.google.com/lesssecureapps?pli=1).
+
+In your terminal, copy and paste this:
+
+```out
+pip3 install yfinance
+pip3 install pandas
+pip3 install numpy
+pip3 install get-all-tickers
+```
+
+If you are on Windows and not Mac, I believe you need to install everything manually (or work in a VM). Take a look at this [article](https://medium.com/automated-trading/a-guide-to-automating-your-stock-analysis-with-python-4b6929e54201)-- it may help. 
+
+
 
 Changes coming in the future:
 
@@ -23,7 +38,7 @@ if curr < 25:
 
   if curr > lowPt and curr < highPt:
   # look at this stock because it has recovered and it has potential
-  # if it has had a downward trend in ONLY the past three days - I think it's going to go bback up
+  # if it has had a downward trend in ONLY the past three days - I think it's going to go back up
 
   run OBV analysis
 
