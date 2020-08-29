@@ -45,5 +45,28 @@ if curr < 25:
 
 # pack up and send email
 ```
+## Options Analysis
 
 In the future, I plan on implemeting this in order to help me achieve my goal of making an average of *+16%* per week trading options. 
+
+I'm getting an issue when it comes to finding Options to analyze based on ```get-all-tickers```. It is throwing an error and this is something that some people have run into. 
+
+Below is the error:
+
+```out
+Traceback (most recent call last):
+  File "/Users/trapbookpro/Documents/Computer Science/Projects/Email-Stock-Report/experimenting.py", line 289, in <module>
+    main()
+  File "/Users/trapbookpro/Documents/Computer Science/Projects/Email-Stock-Report/experimenting.py", line 288, in main
+    find_options()
+  File "/Users/trapbookpro/Documents/Computer Science/Projects/Email-Stock-Report/experimenting.py", line 256, in find_options
+    collection[str(stock)] = len(options_in_limit(str(stock)))
+  File "/Users/trapbookpro/Documents/Computer Science/Projects/Email-Stock-Report/experimenting.py", line 72, in options_in_limit
+    for i in tkr.options:
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/yfinance/ticker.py", line 195, in options
+    self._download_options()
+  File "/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/yfinance/ticker.py", line 61, in _download_options
+    return r['optionChain']['result'][0]['options'][0]
+IndexError: list index out of range
+```
+I've seen this issue before [here](https://aroussi.com/post/download-options-data)
